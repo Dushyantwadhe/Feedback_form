@@ -92,7 +92,7 @@ print_r($request);
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form" action="" method="post">
+			<form class="contact100-form validate-form" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 				<span class="contact100-form-title">
 					Welcome to RGPV
 				</span>
