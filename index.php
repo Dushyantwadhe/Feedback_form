@@ -149,35 +149,35 @@ print_r($request);
 						<span class="label-input100">Nature of Problem</span>
 
 						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio1" type="radio" name="checkbox_group[]" value="login_issue" >
+							<input class="input-radio100" id="radio1" type="checkbox" name="checkbox_group[]" value="login_issue" >
 							<label class="label-radio100" for="radio1">
 								Login issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio2" type="radio" name="checkbox_group[]" value="verification_issue">
+							<input class="input-radio100" id="radio2" type="checkbox" name="checkbox_group[]" value="verification_issue">
 							<label class="label-radio100" for="radio2">
 								Verification issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio3" type="radio" name="checkbox_group[]" value="network_issue">
+							<input class="input-radio100" id="radio3" type="checkbox" name="checkbox_group[]" value="network_issue">
 							<label class="label-radio100" for="radio3">
 								Network issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio4" type="radio" name="checkbox_group[]" value="submission_issue">
+							<input class="input-radio100" id="radio4" type="checkbox" name="checkbox_group[]" value="submission_issue">
 							<label class="label-radio100" for="radio4">
 								Submission issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio5" type="radio" name="checkbox_group[]" value="time_issue">
+							<input class="input-radio100" id="radio5" type="checkbox" name="checkbox_group[]" value="time_issue">
 							<label class="label-radio100" for="radio5">
 								Time issue
 							</label>
