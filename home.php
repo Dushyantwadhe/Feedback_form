@@ -33,9 +33,9 @@
 
 <?php
 
-include('../src/Airtable.php');
-include('../src/Request.php');
-include('../src/Response.php');
+include('src/Airtable.php');
+include('src/Request.php');
+include('src/Response.php');
 
 use \TANIOS\Airtable\Airtable;
 $airtable = new Airtable(array(
