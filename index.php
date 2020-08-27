@@ -73,7 +73,7 @@ $params = array(
 		"Course" => $course,
 		"Mobile" => $phone,
 		"Email" => $email,
-		"Problem" => $checkbox_values,
+		"Problem" => implode(", ",$checkbox_values),
 		
 		"Message" => $message,
 		"Wrong Questions" => $quest1,
