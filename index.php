@@ -65,13 +65,13 @@ $params = array(
 		"Name" => $name,
 		"College" => $college,
 		"Course" => $course,
-		"Mobile" => $phone
-		"Email" => $email
-		"Problem" => $checkbox_values
+		"Mobile" => $phone,
+		"Email" => $email,
+		"Problem" => $checkbox_values,
 		
-		"Message" => $message
-		"Wrong Questions" => $quest1
-		"Out-of-Syllabus Questions" => $quest2
+		"Message" => $message,
+		"Wrong Questions" => $quest1,
+		"Out-of-Syllabus Questions" => $quest2,
 );
 
 $request = $airtable->getContent( 'RGVB', $params);
