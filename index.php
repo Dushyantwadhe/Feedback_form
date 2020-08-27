@@ -72,7 +72,7 @@ $params = array(
 		"Course" => $course,
 		"Mobile" => $phone
 		"Email" => $email
-		"Problem" => array($login_issue, $submission_issue, $network_issue, $verification_issue, %time_issue)
+		"Problem" => array($login_issue, $submission_issue, $network_issue, $verification_issue, $time_issue)
 		"Message" => $message
 		"Wrong Questions" => $quest1
 		"Out-of-Syllabus Questions" => $quest2
@@ -81,7 +81,7 @@ $params = array(
 $request = $airtable->getContent( 'RGVB', $params);
 
 do {
-    $response = $request->getResponse();
+    $response = $request->updateResponse();
     var_dump( $response[ 'records' ] );
 }
 while( $request = $response->next() );
