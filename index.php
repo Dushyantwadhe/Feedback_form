@@ -87,8 +87,6 @@ $request = $airtable->saveContent( 'RGVB', $params);
 //     var_dump( $response[ 'records' ] );
 // }
 // while( $request = $response->next() );
-
-print_r($request);
 	
 }
 ?>
