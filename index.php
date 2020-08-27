@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$quest1 = $_POST['quest1'];
 	$quest2 = $_POST['quest2'];
 	$message = $_POST['message'];
-}
+
 
 
 $params = array(
@@ -80,16 +80,17 @@ $params = array(
 		"Out-of-Syllabus Questions" => $quest2,
 );
 
-$request = $airtable->getContent( 'RGVB', $params);
+$request = $airtable->saveContent( 'RGVB', $params);
 
-do {
-    $response = $request->updateResponse();
-    var_dump( $response[ 'records' ] );
-}
-while( $request = $response->next() );
+// do {
+//     $response = $request->getResponse();
+//     var_dump( $response[ 'records' ] );
+// }
+// while( $request = $response->next() );
 
 print_r($request);
-
+	
+}
 ?>
 
 
