@@ -53,11 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$college = $_POST['college'];
 	$phone = $_POST['phone'];
 	$email = $_POST['email'];
-	$login_issue = $_POST['login_issue'];
-	$verification_issue = $_POST['verification_issue'];
-	$network_issue = $_POST['network_issue'];
-	$submission_issue = $_POST['submission_issue'];
-	$time_issue = $_POST['time_issue'];
+	$checkbox_values = $_POST['checkbox_group'];
 	$quest1 = $_POST['quest1'];
 	$quest2 = $_POST['quest2'];
 	$message = $_POST['message'];
@@ -71,7 +67,8 @@ $params = array(
 		"Course" => $course,
 		"Mobile" => $phone
 		"Email" => $email
-		"Problem" => array($login_issue, $submission_issue, $network_issue, $verification_issue, $time_issue)
+		"Problem" => $checkbox_values
+		
 		"Message" => $message
 		"Wrong Questions" => $quest1
 		"Out-of-Syllabus Questions" => $quest2
@@ -145,35 +142,35 @@ print_r($request);
 						<span class="label-input100">Nature of Problem</span>
 
 						<div class="contact100-form-radio m-t-15">
-							<input class="input-radio100" id="radio1" type="radio" name="login_issue" value="login_issue" >
+							<input class="input-radio100" id="radio1" type="radio" name="checkbox_group[]" value="login_issue" >
 							<label class="label-radio100" for="radio1">
 								Login issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio2" type="radio" name="verification_issue" value="verification_issue">
+							<input class="input-radio100" id="radio2" type="radio" name="checkbox_group[]" value="verification_issue">
 							<label class="label-radio100" for="radio2">
 								Verification issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio3" type="radio" name="network_issue" value="network_issue">
+							<input class="input-radio100" id="radio3" type="radio" name="checkbox_group[]" value="network_issue">
 							<label class="label-radio100" for="radio3">
 								Network issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio4" type="radio" name="submission_issue" value="submission_issue">
+							<input class="input-radio100" id="radio4" type="radio" name="checkbox_group[]" value="submission_issue">
 							<label class="label-radio100" for="radio4">
 								Submission issue
 							</label>
 						</div>
 
 						<div class="contact100-form-radio">
-							<input class="input-radio100" id="radio5" type="radio" name="time_issue" value="time_issue">
+							<input class="input-radio100" id="radio5" type="radio" name="checkbox_group[]" value="time_issue">
 							<label class="label-radio100" for="radio5">
 								Time issue
 							</label>
