@@ -96,8 +96,9 @@ $request = $airtable->saveContent( 'RGVB', $params);
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
 				<span class="contact100-form-title">
-					Welcome to RGPV
+					Welcome to RGPV Exam Problem Portal
 				</span>
+				<p>We are here to understand all your problems and adress the same with the autorities whereever possible.
 				<h5><b> Please fill form below to ensure your representation:</b></h5><br><br>
 
 				<div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
@@ -110,13 +111,18 @@ $request = $airtable->saveContent( 'RGVB', $params);
 					<input class="input100" type="text" name="roll" placeholder="Enter Roll Number">
 				</div>
 
-				<div class="wrap-input100 bg1 rs1-wrap-input100">
+					<div class="wrap-input100 bg1 rs1-wrap-input100">
 					<span class="label-input100">Course Enrolled</span>
 					<div>
 						<select class="js-select2" name="course">
-							<option value="btech">B.Tech</option>
-							<option value="bpharm">B.Pharm</option>
-							<option value="something">something</option>
+							<option value="B.E./B.tech">B.E./B.tech</option>
+							<option value="M.E./M.tech">M.E./M.tech</option>
+							<option value="B.Pharma">B.Pharma</option>
+							<option value="M.Pharma">M.Pharma</option>
+							<option value="B.Arch">B.Arch</option>
+							<option value="M.Arch">M.Arch</option>
+							<option value="MAM">MAM</option>
+							<option value="BCA/MCA">BCA/MCA</option>
 							<option value="other">other</option>
 						</select>
 						<div class="dropDownSelect2"></div>
